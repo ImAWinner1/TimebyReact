@@ -17,14 +17,17 @@ function tick(){
 }
 setInterval(tick,1000);
 */
-const clock= (
-    <div>
-        <h1>Hello World ! </h1>
-        <h2>It is {new Date().toLocaleTimeString()}.</h2>
-
-    </div>
-);
+class Clock extends React.Component { 
+    render(){
+        return(
+            <div>
+                <h1>Hello World ! </h1>
+                <h2>It is {new Date().toLocaleTimeString()}.</h2>
+            </div>
+        )
+    }
+}
 ReactDom.render(
-    clock,
+    <Clock />,
     document.getElementById('root')
 );
