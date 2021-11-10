@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-
+/*
 function tick(){
     const element= (
         <div>
@@ -16,3 +16,4 @@ function tick(){
 
 }
 setInterval(tick,1000);
+*/
