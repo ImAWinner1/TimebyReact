@@ -18,11 +18,17 @@ function tick(){
 setInterval(tick,1000);
 */
 class Clock extends React.Component { 
+    constructor(props){
+        super(props);
+        this.state={
+           date: new Date().toLocaleTimeString()
+        };
+    }
     render(){
         return(
             <div>
                 <h1>Hello World ! </h1>
-                <h2>It is {new Date().toLocaleTimeString()}.</h2>
+                <h2>It is {this.state.date}.</h2>
             </div>
         )
     }
